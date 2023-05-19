@@ -30,7 +30,6 @@ function listPosts() {
       .then(response => response.json())
       .then(post => {
         console.log('Post created:', post);
-        // Clear input fields
         document.getElementById('title').value = '';
         document.getElementById('body').value = '';
       })
@@ -52,7 +51,6 @@ function listPosts() {
       .then(response => response.json())
       .then(post => {
         console.log('Post updated:', post);
-        // Clear input fields
         document.getElementById('postIdToUpdate').value = '';
         document.getElementById('updatedTitle').value = '';
         document.getElementById('updatedBody').value = '';
@@ -80,7 +78,6 @@ function listPosts() {
       .then(response => {
         if (response.ok) {
           console.log('Post deleted');
-          // Clear input field
           document.getElementById('postIdToDelete').value = '';
         } else {
           console.log('Post deletion failed:', response.status);
