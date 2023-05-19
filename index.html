@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> API Demo</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Posts</h1>
+
+  <div class="container">
+    <button onclick="listPosts()">List Posts</button>
+  
+  <h2>Create a Post</h2>
+  <input type="text" id="title" placeholder="Title">
+  <input type="text" id="body" placeholder="Body">
+  <button onclick="createPost()">Create Post</button>
+  
+  <h2>Update a Post</h2>
+  <input type="number" id="postIdToUpdate" placeholder="Post ID">
+  <input type="text" id="updatedTitle" placeholder="Updated Title">
+  <input type="text" id="updatedBody" placeholder="Updated Body">
+  <button onclick="updatePost()">Update Post</button>
+  
+  <h2>Delete a Post</h2>
+  <input type="number" id="postIdToDelete" placeholder="Post ID">
+  <button onclick="deletePost()">Delete Post</button>
+  
+  <h2>Filter Posts by User ID</h2>
+  <input type="number" id="userId" placeholder="User ID">
+  <button onclick="filterPosts()">Filter Posts</button>
+  
+  <ul id="postsList"></ul>
+
+  </div>
+  
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
